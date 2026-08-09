@@ -72,13 +72,6 @@
     },
     {
       "type": "partner",
-      "key": "cbf",
-      "name": "CBF",
-      "tag": "Collab · Confederação",
-      "match": { "hashtags": ["#cbf"] }
-    },
-    {
-      "type": "partner",
       "key": "botafogo",
       "name": "Botafogo",
       "tag": "Collab · Clube",
