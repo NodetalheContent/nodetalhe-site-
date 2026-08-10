@@ -322,6 +322,31 @@
   .num-item-val{font-family:var(--mono);font-weight:600;font-size:clamp(30px,3.4vw,44px);color:var(--white);letter-spacing:-.02em;}
   .num-item-lbl{font-size:13.5px;color:var(--gray);margin-top:10px;letter-spacing:.02em;max-width:26ch;}
 
+  /* ---------- destaques ---------- */
+  .destaques{border-top:1px solid var(--line);}
+  .destaque-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:56px;}
+  @media(max-width:900px){.destaque-grid{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto;}}
+  .destaque-card{background:var(--black);padding:26px;display:flex;flex-direction:column;gap:20px;}
+  .destaque-video{
+    position:relative;aspect-ratio:9/16;border-radius:4px;overflow:hidden;background:var(--black-3);cursor:pointer;
+  }
+  .destaque-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .destaque-video::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(to top, rgba(8,8,9,.55) 0%, rgba(8,8,9,0) 42%);
+  }
+  .destaque-play{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
+    width:52px;height:52px;border:1px solid rgba(245,245,243,.7);border-radius:50%;background:rgba(10,10,10,.35);
+    display:flex;align-items:center;justify-content:center;transition:transform .35s var(--ease), border-color .35s, opacity .3s;
+  }
+  .destaque-video:hover .destaque-play{transform:translate(-50%,-50%) scale(1.12);border-color:var(--yellow);}
+  .destaque-play::after{content:"";border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent var(--white);margin-left:3px;}
+  .destaque-title{font-family:var(--display);font-size:19px;text-transform:uppercase;color:var(--white);line-height:1.15;}
+  .destaque-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px;padding-top:16px;border-top:1px solid var(--line);}
+  .destaque-stat-val{font-family:var(--mono);font-weight:600;font-size:clamp(19px,2.2vw,24px);color:var(--yellow);letter-spacing:-.01em;display:block;}
+  .destaque-stat-lbl{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--gray);margin-top:4px;display:block;}
+
   /* ---------- competicoes ---------- */
   .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
   @media(max-width:900px){.comp-grid{grid-template-columns:repeat(2,1fr);}}
@@ -795,6 +820,103 @@
           <div class="num-item-line"></div>
           <div class="num-item-val" id="statForaDaBasePercent" data-count="98.2" data-decimals="1" data-suffix="%">0</div>
           <div class="num-item-lbl">Das visualizações vêm de fora da base de seguidores: gente nova, todo dia.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section class="destaques" id="destaques">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow reveal"><span class="dot"></span>Destaques</div>
+        <h2 class="reveal reveal-delay-1">O detalhe que<br>virou viral.</h2>
+        <p class="section-hint reveal reveal-delay-1">Três Reels, milhões de pessoas alcançadas fora da nossa base.</p>
+      </div>
+
+      <div class="destaque-grid">
+        <div class="destaque-card reveal">
+          <div class="destaque-video">
+            <video poster="assets/videos/destaques/v01-cover.jpg" preload="none" playsinline>
+              <source src="assets/videos/destaques/v01.mp4" type="video/mp4">
+            </video>
+            <div class="destaque-play"></div>
+          </div>
+          <div class="destaque-title">Neymar está de volta</div>
+          <div class="destaque-stats">
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="17.4" data-decimals="1" data-suffix=" Mi">0</span>
+              <span class="destaque-stat-lbl">Visualizações</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="1" data-decimals="0" data-suffix=" Mi">0</span>
+              <span class="destaque-stat-lbl">Curtidas</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="3869" data-thousands="true">0</span>
+              <span class="destaque-stat-lbl">Comentários</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="15.4" data-decimals="1" data-suffix=" mil">0</span>
+              <span class="destaque-stat-lbl">Compartilhamentos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaque-card reveal reveal-delay-1">
+          <div class="destaque-video">
+            <video poster="assets/videos/destaques/v02-cover.jpg" preload="none" playsinline>
+              <source src="assets/videos/destaques/v02.mp4" type="video/mp4">
+            </video>
+            <div class="destaque-play"></div>
+          </div>
+          <div class="destaque-title">Neymar em família após a aposentadoria</div>
+          <div class="destaque-stats">
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="26.9" data-decimals="1" data-suffix=" Mi">0</span>
+              <span class="destaque-stat-lbl">Visualizações</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="2" data-decimals="0" data-suffix=" Mi">0</span>
+              <span class="destaque-stat-lbl">Curtidas</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="4158" data-thousands="true">0</span>
+              <span class="destaque-stat-lbl">Comentários</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="38.3" data-decimals="1" data-suffix=" mil">0</span>
+              <span class="destaque-stat-lbl">Compartilhamentos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="destaque-card reveal reveal-delay-2">
+          <div class="destaque-video">
+            <video poster="assets/videos/destaques/v03-cover.jpg" preload="none" playsinline>
+              <source src="assets/videos/destaques/v03.mp4" type="video/mp4">
+            </video>
+            <div class="destaque-play"></div>
+          </div>
+          <div class="destaque-title">Depois do jogo, no Santos</div>
+          <div class="destaque-stats">
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="19.5" data-decimals="1" data-suffix=" Mi">0</span>
+              <span class="destaque-stat-lbl">Visualizações</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="855" data-decimals="0" data-suffix=" mil">0</span>
+              <span class="destaque-stat-lbl">Curtidas</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="3778" data-thousands="true">0</span>
+              <span class="destaque-stat-lbl">Comentários</span>
+            </div>
+            <div class="destaque-stat">
+              <span class="destaque-stat-val" data-count="7966" data-thousands="true">0</span>
+              <span class="destaque-stat-lbl">Compartilhamentos</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1385,6 +1507,17 @@
   // instagram handle no rodapé de contato: se categories.json trouxer um
   // "profile" no futuro, isso já teria onde plugar. Por ora usa o valor
   // fixo já presente no HTML (@nodetalhecontent_).
+
+  // destaques — clique no vídeo pra tocar com som
+  document.querySelectorAll('.destaque-video').forEach(wrap => {
+    const video = wrap.querySelector('video');
+    const playBtn = wrap.querySelector('.destaque-play');
+    wrap.addEventListener('click', () => {
+      if (video.paused) { video.controls = true; video.play(); }
+    });
+    video.addEventListener('play', () => { playBtn.style.opacity = '0'; });
+    video.addEventListener('pause', () => { playBtn.style.opacity = '1'; });
+  });
 
   /* ---------- tilt hover on cards ---------- */
   if (matchMedia('(pointer:fine)').matches) {
