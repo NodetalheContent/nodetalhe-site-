@@ -79,58 +79,6 @@
       ]
     },
     {
-      "id": "local-santos-1",
-      "localVideo": "assets/videos/santos/v01.mp4",
-      "mediaType": "VIDEO",
-      "date": null,
-      "title": "Reel 1",
-      "captionShort": "",
-      "caption": "",
-      "competitions": [],
-      "partners": [
-        "santos"
-      ]
-    },
-    {
-      "id": "local-santos-2",
-      "localVideo": "assets/videos/santos/v02.mp4",
-      "mediaType": "VIDEO",
-      "date": null,
-      "title": "Reel 2",
-      "captionShort": "",
-      "caption": "",
-      "competitions": [],
-      "partners": [
-        "santos"
-      ]
-    },
-    {
-      "id": "local-fluminense-1",
-      "localVideo": "assets/videos/fluminense/v01.mp4",
-      "mediaType": "VIDEO",
-      "date": null,
-      "title": "Reel 1",
-      "captionShort": "",
-      "caption": "",
-      "competitions": [],
-      "partners": [
-        "fluminense"
-      ]
-    },
-    {
-      "id": "local-fluminense-2",
-      "localVideo": "assets/videos/fluminense/v02.mp4",
-      "mediaType": "VIDEO",
-      "date": null,
-      "title": "Reel 2",
-      "captionShort": "",
-      "caption": "",
-      "competitions": [],
-      "partners": [
-        "fluminense"
-      ]
-    },
-    {
       "id": "local-brasileirao-saveclip-app-aqm-wtsvsvhvxfv8lzohiklgawysnqfzxtmrzibhjxkwq8vjui-zqsvajvhpr0qvqd7e41q0e1ys7pbh4uvaxmmtbjr-0ofirh-woa",
       "localVideo": "assets/videos/brasileirao/SaveClip.App_AQM_wTsVSvhVXFv8lzOhIklGAWySnQFZXtMrziBhjXkWq8VJuI-ZQSVAjVhpR0QVQd7E41Q0e1Ys7PBH4UvAxMmtBJR_0ofIrH__WoA.mp4",
       "mediaType": "VIDEO",
