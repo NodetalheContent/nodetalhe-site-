@@ -79,6 +79,20 @@
     },
     {
       "type": "partner",
+      "key": "santos",
+      "name": "Santos",
+      "tag": "Collab · Clube",
+      "match": { "hashtags": ["#santos", "#santosfc"] }
+    },
+    {
+      "type": "partner",
+      "key": "fluminense",
+      "name": "Fluminense",
+      "tag": "Collab · Clube",
+      "match": { "hashtags": ["#fluminense", "#fluzao"] }
+    },
+    {
+      "type": "partner",
       "key": "fabrizio",
       "name": "Fabrizio Romano",
       "tag": "Collab · Jornalismo esportivo",

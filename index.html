@@ -324,7 +324,7 @@
 
   /* ---------- destaques ---------- */
   .destaques{border-top:1px solid var(--line);overflow:hidden;}
-  .destaque-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:64px;}
+  .destaque-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:64px;}
   @media(max-width:900px){.destaque-grid{grid-template-columns:1fr;max-width:340px;margin-left:auto;margin-right:auto;gap:44px;}}
   .destaque-card{
     display:flex;flex-direction:column;transition:transform .45s var(--ease), opacity .45s var(--ease);
@@ -842,7 +842,7 @@
       <div class="section-head">
         <div class="eyebrow reveal"><span class="dot"></span>Destaques</div>
         <h2 class="reveal reveal-delay-1">O detalhe que<br>virou viral.</h2>
-        <p class="section-hint reveal reveal-delay-1">Três Reels, milhões de pessoas alcançadas fora da nossa base.</p>
+        <p class="section-hint reveal reveal-delay-1">Quatro Reels, milhões de pessoas alcançadas fora da nossa base.</p>
       </div>
 
       <div class="destaque-grid">
@@ -935,6 +935,36 @@
             </div>
           </div>
         </div>
+
+        <div class="destaque-card reveal reveal-delay-3">
+          <div class="destaque-video">
+            <video poster="assets/videos/destaques/v04-cover.jpg" preload="none" playsinline muted loop>
+              <source src="assets/videos/destaques/v04.mp4" type="video/mp4">
+            </video>
+            <div class="destaque-play"></div>
+          </div>
+          <div class="destaque-info">
+            <div class="destaque-title">Neymar e Thiago Mendes</div>
+            <div class="destaque-stats">
+              <div class="destaque-stat">
+                <span class="destaque-stat-val" data-count="50" data-decimals="0" data-suffix=" Mi">0</span>
+                <span class="destaque-stat-lbl">Visualizações</span>
+              </div>
+              <div class="destaque-stat">
+                <span class="destaque-stat-val" data-count="1.3" data-decimals="1" data-suffix=" Mi">0</span>
+                <span class="destaque-stat-lbl">Curtidas</span>
+              </div>
+              <div class="destaque-stat">
+                <span class="destaque-stat-val" data-count="16500" data-thousands="true">0</span>
+                <span class="destaque-stat-lbl">Comentários</span>
+              </div>
+              <div class="destaque-stat">
+                <span class="destaque-stat-val" data-count="11.8" data-decimals="1" data-suffix=" mil">0</span>
+                <span class="destaque-stat-lbl">Compartilhamentos</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -994,6 +1024,21 @@
           <div><h3>Sua Foto no Jogo</h3><div class="tag">Nodetalhe · Experiência do torcedor</div></div>
           <span class="go">↗</span>
         </button>
+        <button class="comp-card tilt" data-type="partners" data-key="botafogo">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4z"/></svg>
+          <div><h3>Botafogo</h3><div class="tag">Collab · Clube</div></div>
+          <span class="go">↗</span>
+        </button>
+        <button class="comp-card tilt" data-type="partners" data-key="santos">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4z"/></svg>
+          <div><h3>Santos</h3><div class="tag">Collab · Clube</div></div>
+          <span class="go">↗</span>
+        </button>
+        <button class="comp-card tilt" data-type="partners" data-key="fluminense">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4z"/></svg>
+          <div><h3>Fluminense</h3><div class="tag">Collab · Clube</div></div>
+          <span class="go">↗</span>
+        </button>
       </div>
     </div>
   </section>
@@ -1009,10 +1054,14 @@
       <div class="marquee-track" id="marqueeTrack">
         <button class="marquee-item" data-type="partners" data-key="433">433 <span class="sep"></span></button>
         <button class="marquee-item" data-type="partners" data-key="botafogo">Botafogo <span class="sep"></span></button>
+        <button class="marquee-item" data-type="partners" data-key="santos">Santos <span class="sep"></span></button>
+        <button class="marquee-item" data-type="partners" data-key="fluminense">Fluminense <span class="sep"></span></button>
         <button class="marquee-item" data-type="partners" data-key="fabrizio">Fabrizio Romano <span class="sep"></span></button>
         <button class="marquee-item" data-type="partners" data-key="tnt">TNT Sports <span class="sep"></span></button>
         <button class="marquee-item" data-type="partners" data-key="433">433 <span class="sep"></span></button>
         <button class="marquee-item" data-type="partners" data-key="botafogo">Botafogo <span class="sep"></span></button>
+        <button class="marquee-item" data-type="partners" data-key="santos">Santos <span class="sep"></span></button>
+        <button class="marquee-item" data-type="partners" data-key="fluminense">Fluminense <span class="sep"></span></button>
         <button class="marquee-item" data-type="partners" data-key="fabrizio">Fabrizio Romano <span class="sep"></span></button>
         <button class="marquee-item" data-type="partners" data-key="tnt">TNT Sports <span class="sep"></span></button>
       </div>
