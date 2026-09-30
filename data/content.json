@@ -547,6 +547,32 @@
       ]
     },
     {
+      "id": "local-fluminense-v01",
+      "localVideo": "assets/videos/fluminense/v01.mp4",
+      "mediaType": "VIDEO",
+      "date": null,
+      "title": "Reel 1",
+      "captionShort": "",
+      "caption": "",
+      "competitions": [],
+      "partners": [
+        "fluminense"
+      ]
+    },
+    {
+      "id": "local-fluminense-v02",
+      "localVideo": "assets/videos/fluminense/v02.mp4",
+      "mediaType": "VIDEO",
+      "date": null,
+      "title": "Reel 2",
+      "captionShort": "",
+      "caption": "",
+      "competitions": [],
+      "partners": [
+        "fluminense"
+      ]
+    },
+    {
       "id": "local-internacionais-1",
       "localVideo": "assets/videos/internacionais/v01.mp4",
       "mediaType": "VIDEO",
@@ -753,6 +779,32 @@
         "paulistao"
       ],
       "partners": []
+    },
+    {
+      "id": "local-santos-v01",
+      "localVideo": "assets/videos/santos/v01.mp4",
+      "mediaType": "VIDEO",
+      "date": null,
+      "title": "Reel 1",
+      "captionShort": "",
+      "caption": "",
+      "competitions": [],
+      "partners": [
+        "santos"
+      ]
+    },
+    {
+      "id": "local-santos-v02",
+      "localVideo": "assets/videos/santos/v02.mp4",
+      "mediaType": "VIDEO",
+      "date": null,
+      "title": "Reel 2",
+      "captionShort": "",
+      "caption": "",
+      "competitions": [],
+      "partners": [
+        "santos"
+      ]
     },
     {
       "id": "local-selecao-1",

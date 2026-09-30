@@ -25,6 +25,8 @@ const KEY_FIELD = {
   'sua-foto-no-jogo': 'competitions',
   '433': 'partners',
   'botafogo': 'partners',
+  'santos': 'partners',
+  'fluminense': 'partners',
   'fabrizio': 'partners',
   'tnt': 'partners',
 };
